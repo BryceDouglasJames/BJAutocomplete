@@ -1,0 +1,82 @@
+.first-box {
+	background-color: #3b3f47;
+	color: aliceblue;
+	position: relative;
+	align-content: center;
+	justify-content: center;
+	margin: auto;
+	padding-top: 3.7rem;
+	border-radius: 0.8rem;
+	text-align: center;
+}
+
+.second-box {
+	background-color: #3b3f47;
+	color: aliceblue;
+	position: relative;
+	align-content: center;
+	justify-content: center;
+	margin: auto;
+	padding-top: 3.7rem;
+	border-radius: 0.8rem;
+	text-align: center;
+}
+
+h1 {
+	padding-bottom: 1rem;
+}
+
+button {
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 0.8rem;
+	color: white;
+	width: 10em;
+	height: 5vh;
+	background-color: #3b3f47;
+	border-radius: 2rem;
+	border-color: white;
+	position: relative;
+}
+
+button:hover {
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 0.8rem;
+	color: black;
+	width: 10em;
+	height: 5vh;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	border-color: white;
+	position: relative;
+}
+
+.double-cols {
+	columns: 0.5rem 2;
+}
+
+@media screen and (max-width: 966px) {
+	.first-box {
+		width: 85vw;
+	}
+
+	.second-box {
+		width: 85vw;
+	}
+
+	p {
+		font-size: '16px';
+	}
+}
+@media screen and (min-width: 966px) {
+	.first-box {
+		width: 33vw;
+	}
+
+	.second-box {
+		width: 50vw;
+	}
+
+	p {
+		size: '40px';
+	}
+}
