@@ -7,6 +7,7 @@ interface AutoComplete {
 }
 
 export function Suggestions(searchTerm: string, dict: string[] = []): [string[][], number] {
+    let start = performance.now();
     const [search, setSearch] = useState<AutoComplete>({
         searchTree: new SuffixTrie()
         //TODO Render graph representation of the trie
@@ -21,9 +22,7 @@ export function Suggestions(searchTerm: string, dict: string[] = []): [string[][
     },[])
 
     //if there is a search, check to see if word is found
-    if (searchTerm.length > 0) {
-        let start = performance.now();
-        
+    if (searchTerm.length > 0) {       
         return [[searchTree.create_suggestions(searchTerm)], performance.now() - start ];
     }else{
         return [[], -1];

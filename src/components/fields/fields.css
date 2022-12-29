@@ -1,18 +1,56 @@
+.main-container{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding:10px;
+	align-items: center;
+	justify-content: center;
+}
+
 .first-box {
 	background-color: #3b3f47;
 	color: aliceblue;
-	position: relative;
 	align-content: center;
 	justify-content: center;
 	margin: auto;
-	padding-top: 3.7rem;
 	border-radius: 0.8rem;
 	text-align: center;
+	top:-20%;
 }
 
 .second-box {
+	display: flex;
+    flex-wrap: wrap;
 	background-color: #3b3f47;
 	color: aliceblue;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	margin: auto;
+	padding: 1rem;
+	border-radius: 0.8rem;
+	text-align: center;
+	
+}
+
+
+.second-box > textarea{
+	align-items: center;
+	text-align: center;
+	font-size: 20px;
+	width: 100%;
+	max-width: 95%;
+	padding: 5px;
+	height: 100%; 
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.third-box{
+	width: 90%;
+	background-color: #ffffff;
+	color: black;
 	position: relative;
 	align-content: center;
 	justify-content: center;
@@ -20,38 +58,55 @@
 	padding-top: 3.7rem;
 	border-radius: 0.8rem;
 	text-align: center;
+	overflow-y: auto;
+    height: 200px;
 }
+
 
 h1 {
 	padding-bottom: 1rem;
 }
 
-button {
+form > button {
 	font-family: 'Roboto Mono', sans-serif;
 	font-size: 0.8rem;
 	color: white;
 	width: 10em;
-	height: 5vh;
+	height: fit-content;
 	background-color: #3b3f47;
 	border-radius: 2rem;
 	border-color: white;
 	position: relative;
 }
 
-button:hover {
+form > button:hover {
 	font-family: 'Roboto Mono', sans-serif;
 	font-size: 0.8rem;
 	color: black;
 	width: 10em;
-	height: 5vh;
+	height: fit-content;
 	background-color: whitesmoke;
 	border-radius: 2rem;
 	border-color: white;
 	position: relative;
 }
 
+.single-col{
+	columns: 0.5rem 1;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
 .double-cols {
-	columns: 0.5rem 2;
+	columns: 0.5rem 1;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+.triple-cols{
+	columns: 0.5rem 3;
 }
 
 @media screen and (max-width: 966px) {
@@ -79,4 +134,49 @@ button:hover {
 	p {
 		size: '40px';
 	}
+}
+
+.word-row{
+	height:fit-content;
+	border-radius: 0.8rem;
+	border-style: outset;
+	color: black;
+	display: flex;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+ 	justify-content: center;
+	width: 100%;
+}
+
+.row-flex-item{
+	width: 30%;
+	height: auto;
+	flex-grow:0;
+	flex-shrink: 0;
+	overflow-wrap: break-word;
+}
+
+.word-row > .row-flex-item >  button{
+	position: sticky;
+	top: 20%;
+	left: 10%;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.button-rows{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 20px;
+	text-align: center;
+	align-items: center;
+ 	justify-content: center;
+}
+
+.button-row{
+	height: auto;
+	width: auto;
+	padding:10px;
 }
