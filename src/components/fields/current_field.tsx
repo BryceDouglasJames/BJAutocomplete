@@ -131,7 +131,7 @@ export default function CurrentField(): JSX.Element {
                     <div style={{padding:"5px"}}></div>
                     {(dic.length !== 0)?
                         <div className="third-box">
-                            <h2 style={{textAlign:"center", color:"black"}}>Dictionary</h2>
+                            <h2 style={{textAlign:"center", color:"black", paddingLeft:"20px"}}>Dictionary</h2>
                             {dic?.slice(1).map((word: any, index: any)=>{
                                 return(
                                     <>
